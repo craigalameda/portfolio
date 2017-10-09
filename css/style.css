@@ -1,0 +1,243 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*END OF RESET START OF CSS*/
+
+h1{
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+h2{
+	font-family: 'Pontano Sans', sans-serif;
+	font-style: italic;
+}
+
+p{
+  font-family: 'Mada', sans-serif;
+}
+
+
+
+/*SIDE NAV*/
+
+.hamburger{
+  float: right;
+	padding: 15px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #14323C;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 5px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/*@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}*/
+/*END OF SIDE NAV*/
+
+
+/*Start of Jumbotron*/
+.jumbotron{
+	height: 100%;
+	background-image: url('../img/texture.png');
+	background-repeat: repeat;
+	background-color: #3587A4;
+	box-shadow: 0px 5px 20px #888888;
+}
+
+.hero-logo{
+	height: 400px;
+	background-color: ;
+  color: transparent;
+  text-shadow: 0px 2px 3px rgba(255,255,255,0.5);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+}
+
+.jumbotron h1{
+	margin: 75px 0px 0px 0px;
+	background-color: #193E4B;
+  color: transparent;
+  text-shadow: 2px 2px 2px rgba(255,255,255,0.1);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+}
+
+.jumbotron h2{
+	margin: 0px 0px 0px 0px;
+	font-size: 200%;
+	background-color: #193E4B;
+  color: transparent;
+  text-shadow: 2px 2px 2px rgba(255,255,255,0.1);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+}
+
+.jumbotron p{
+	margin: 15px 0px 0px 0px;
+	font-size: 120%;
+	background-color: #193E4B;
+  color: transparent;
+  text-shadow: 2px 2px 2px rgba(255,255,255,0.1);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+}
+
+.btn {
+	font-family: 'Mada', sans-serif;
+  display: inline-block;
+  padding: 6px 10px;
+  margin-bottom: 0;
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  /*border-radius: 4px;*/
+  padding: 10px 16px;
+}
+
+.btn-lg {
+  font-size: 15px;
+  line-height: 1.33;
+  /*border-radius: 6px;*/
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #428bca;
+  /*border-color: #357ebd;*/
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #3276b1;
+  border-color: #285e8e;
+
+}
+
+.btn.sharp {
+	border-radius: 0px;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+
+.btn-primary {
+    background: #0099cc;
+    color: #ffffff;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #33a6cc;
+}
+.btn-primary:active, .btn-primary.active {
+    background: #007299;
+    box-shadow: none;
+}
+
+/*End of Jumbotron*/
+
+/*Start of three boxes*/
+
+
+
+/*End of three boxes*/
