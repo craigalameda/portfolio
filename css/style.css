@@ -68,6 +68,8 @@ p{
 .hamburger{
   float: right;
 	padding: 15px;
+	position: relative;
+	z-index: 15;
 }
 
 .sidenav {
