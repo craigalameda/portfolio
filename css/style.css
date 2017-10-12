@@ -111,12 +111,12 @@ p{
 /*END OF SIDE NAV*/
 
 .landing {
-	height: 100vh;
+	height: 80%;
 }
 
 /*Start of Jumbotron*/
 .jumbotron{
-	height: 100%;
+	height: 60%;
 	background-image: url('../img/texture.png');
 	background-repeat: repeat;
 	background-color: #3587A4;
@@ -253,6 +253,11 @@ p{
 	margin: 0px;
 }
 
+.center-row {
+	margin: 0 auto;
+	float:none;
+}
+
 .row .subblock1 {
 	background: #90BDCD;
 	background-image: url('../img/texture.png');
@@ -275,7 +280,7 @@ p{
 	font-style: none;
 	font-size: 30px;
 	text-align: center;
-	padding: 30px 0px 15px 0px;
+	padding: 20px 0px 5px 0px;
 	letter-spacing: 2px;
 }
 
@@ -289,20 +294,20 @@ p{
 }
 
 .row .subblock1 h2{
-	padding: 40px 0px 5px 0px;
+	padding: 30px 0px 5px 0px;
 
 }
 
 .row .subblock1 p{
 	color: white;
 	text-align: center;
-	padding: 30px 0px 30px 0px;
+	padding: 30px 0px 20px 0px;
 }
 
 .row .subblock2 p{
 	color: white;
 	text-align: center;
-	padding: 30px 0px 30px 0px;
+	padding: 20px 0px 30px 0px;
 }
 
 .title2 {
@@ -342,3 +347,16 @@ p{
 }
 
 /*End of three boxes*/
+/*ANIMATION SECTION*/
+.animation-sec{
+	background: #A04343;
+	height: 100vh;
+	position: relative;
+	z-index: -1;
+	transform: translateY(-110px);
+}
+
+.animation-sec.image{
+	background-image: url('../img/animation-main.png');
+	background-size: cover;
+}
