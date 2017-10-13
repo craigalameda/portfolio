@@ -88,6 +88,7 @@
             <h1>CRAIG ALAMEDA</h1>
             <h2>nightlight studio | design & development </h2>
             <p>Shed some light on your bright ideas. From concept through production, I can take your ideas and make them a reality. Brand identity, animation, responsive webdesign, and illustrations. Everything needed to make you shine.</p>
+            <img class="program-icons" src="img/program-icons.png" alt="Programs I know">
             <p><button type="button" class="btn btn-primary btn-lg sharp" href="about.html" role="button">Learn more</button></p>
         </div>
         </div>
@@ -98,19 +99,19 @@
       <!-- Example row of columns -->
       <div class="row ">
       <div class="center-row col-md-8 col-md-offset-2">
-        <a href="animation.html">
+        <a href="#animation">
           <div class="col-md-4 subblock1 tab">
             <h2 class="title1">ANIMATION</h2>
             <p class="title2">see your ideas come to life</p>
           </div>
         </a>
-        <a href="illustration.html">
+        <a href="#illustration">
           <div class="col-md-4 subblock2 tab">
             <h2 class="title1">ILLUSTRATION</h2>
             <p class="title1">from kid lit to educational</p>
          </div>
         </a>
-        <a href="web_design.html">
+        <a href="#web_design">
           <div class="col-md-4 subblock1 tab">
             <h2 class="title1">WEB DESIGN</h2>
             <p class="title2">reach a global audience</p>
@@ -123,10 +124,10 @@
 
   <!--END OF JUMBOTRON-->
   <!--Start of animation section-->
-    <div class="container-fluid animation-sec image">
+    <div class="container-fluid animation-sec image" id="animation">
       <div class="row">
-        <div class="animation-sec-box col-md-4 col-md-offset-7">
-          <h2>ANIMATION</h2>
+        <div class="animation-sec-box col-md-4">
+          <h1>ANIMATION</h1>
           <p>check out my reel</p>
 
         </div>
@@ -148,6 +149,33 @@
 
 
     <!--START OF SCRIPTS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
         <script>
           function openNav() {
           document.getElementById("mySidenav").style.width = "250px";
@@ -156,8 +184,12 @@
         function closeNav() {
           document.getElementById("mySidenav").style.width = "0";
         }
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+        </script>
+
+        <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+        </script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
 
@@ -170,6 +202,6 @@
         function closeNav() {
           document.getElementById("mySidenav").style.width = "0";
         }
-</script>
+        </script>
     </body>
 </html>
